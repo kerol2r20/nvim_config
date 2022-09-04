@@ -65,5 +65,11 @@ return require('packer').startup(function(use)
     --     'marko-cerovac/material.nvim',
     --     config = require('plug_material')
     -- }
+
+    -- Git
+    use {
+        'lewis6991/gitsigns.nvim',
+        config = require('plug_gitsigns')
+    }
 end)
  
