@@ -71,5 +71,24 @@ return require('packer').startup(function(use)
         'lewis6991/gitsigns.nvim',
         config = require('plug_gitsigns')
     }
+
+    -- Snippet
+    use {
+        'L3MON4D3/LuaSnip',
+    }
+
+    -- Auto complete
+    use {
+        'hrsh7th/nvim-cmp',
+        config = require('plug_nvim_cmp'),
+        requires = {
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'hrsh7th/cmp-cmdline' },
+            { 'saadparwaiz1/cmp_luasnip' },
+
+        },
+    }
 end)
  
